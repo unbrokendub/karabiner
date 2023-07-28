@@ -1,0 +1,33 @@
+{
+    "title": "Scroll Lock to CMD + C",
+    "rules": [
+      {
+        "description": "Change Scroll Lock to CMD + C (Copy)",
+        "manipulators": [
+            {
+                "type": "basic",
+                "from": {
+                  "key_code": "scroll_lock",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "left_command"
+              ]
+            },
+            {
+              "key_code": "vk_none"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

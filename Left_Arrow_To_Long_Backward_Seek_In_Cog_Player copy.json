@@ -1,0 +1,40 @@
+{
+    "title": "Left Arrow to long backward seek in Cog Player",
+    "rules": [
+      {
+        "description": "Left Arrow key to fast backward in Cog Player",
+        "manipulators": [
+            {
+                "type": "basic",
+                "from": {
+                  "key_code": "left_arrow"
+                },
+
+          "to": [
+            {
+              "key_code": "left_arrow"
+            },
+            {
+              "key_code": "left_arrow"
+            },
+            {
+              "key_code": "left_arrow"
+            },
+            {
+              "key_code": "left_arrow"
+            },
+            {
+              "key_code": "left_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^org\\.cogx\\.cog$"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

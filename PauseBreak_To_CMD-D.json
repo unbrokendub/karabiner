@@ -1,0 +1,33 @@
+{
+    "title": "Pause Break to CMD + V",
+    "rules": [
+      {
+        "description": "Change Pause_Break to CMD + V (Paste)",
+        "manipulators": [
+            {
+                "type": "basic",
+                "from": {
+                  "key_code": "pause",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+
+          "to": [
+            {
+              "key_code": "v",
+              "modifiers": [
+                "left_command"
+              ]
+            },
+            {
+              "key_code": "vk_none"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

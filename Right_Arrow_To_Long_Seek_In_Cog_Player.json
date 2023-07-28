@@ -1,0 +1,49 @@
+{
+    "title": "Right Arrow to long seek in Cog Player",
+    "rules": [
+      {
+        "description": "Right Arrow key to fast forward seek in Cog Player",
+        "manipulators": [
+            {
+                "type": "basic",
+                "from": {
+                  "key_code": "right_arrow"
+                },
+
+          "to": [
+            {
+              "key_code": "right_arrow"
+            },
+            {
+              "key_code": "right_arrow"
+            },
+            {
+              "key_code": "right_arrow"
+            },
+            {
+              "key_code": "right_arrow"
+            },
+            {
+              "key_code": "right_arrow"
+            },
+            {
+              "key_code": "right_arrow"
+            },
+            {
+              "key_code": "right_arrow"
+            },
+            {
+              "key_code": "right_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^org\\.cogx\\.cog$"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

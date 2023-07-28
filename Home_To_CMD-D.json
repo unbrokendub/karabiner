@@ -1,0 +1,33 @@
+{
+    "title": "Home to CMD + D",
+    "rules": [
+      {
+        "description": "Change Scroll Lock to CMD + D (Duplicate in Ableton)",
+        "manipulators": [
+            {
+                "type": "basic",
+                "from": {
+                  "key_code": "home",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": [
+                "left_command"
+              ]
+            },
+            {
+              "key_code": "vk_none"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
